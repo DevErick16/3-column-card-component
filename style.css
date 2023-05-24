@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;700&family=Karla:wght@700&family=Kumbh+Sans:wght@400;700&family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fjalla+One&family=Inter:wght@400;700&family=Karla:wght@700&family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+--Bright_orange: hsl(31, 77%, 52%);
+--Dark_cyan: hsl(184, 100%, 22%);
+--Very_dark_cyan: hsl(179, 100%, 13%);
+--Transparent_white: hsla(0, 0%, 100%, 0.75);
+--Very_light_gray:hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;  
+    background-color: var(--Transparent_white);
+}
+.main-container{
+    width: 330px;
+    height: 1330px;
+    margin: 90px auto;
+    color: white; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sec-1 , .sec-2, .sec-3{
+    height: 443px;
+    padding: 45px;
+    box-sizing: border-box;
+}
+.sec-1{
+    background-color: var(--Bright_orange);
+    
+}
+.image-container{
+    margin-bottom: 30px;
+}
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+p{
+    font-size: 1.2em;
+    color: var(--Transparent_white);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+button{
+    height: 48px;
+    width: 150px;
+    background-color: var(--Very_light_gray);
+    border-radius: 50px;
+    border: none;
+}
+
+
+.btn-sec1{
+    color: var(--Bright_orange);
+}
+.btn-container a{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.sec-2{
+    background-color: var(--Dark_cyan);
+    
+}
+.btn-sec2{
+    color: var(--Dark_cyan);
+}
+.btn-sec1:hover{
+    background-color: var(--Bright_orange);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.btn-sec2:hover{
+    background-color: var(--Dark_cyan);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.btn-sec3:hover{
+    background-color: var(--Very_dark_cyan);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.sec-3{
+    background-color: var(--Very_dark_cyan);
+}
+.btn-sec3{
+    color: var(--Very_dark_cyan);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+.logo{
+    text-align: center;
+    margin-top: 15px;
+}
+.logo img{
+    width: 100px;
+}
+@media screen and (min-width: 940px){
+
+    .main-container{
+        display: flex;
+        width: 925px;
+        height: 500px;
+        margin: 170px auto;
+    }   
+    .sec-1, .sec-2, .sec-3{
+        height: 500px;
+        padding: 50px;
+    }
+    h1{
+        font-size: 2.4em;
+    }
+    p{
+        margin-bottom: 65px;
+    }
+}
